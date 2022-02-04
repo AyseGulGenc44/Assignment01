@@ -1,0 +1,41 @@
+/* File: app.css  
+   Student Name: Ayse Gul Genc
+   Student ID: 301088239
+// Date: February 3,2022 */
+
+/* Custom CSS */
+
+#circle {
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    border-radius: 50%;
+    background: rgb(179, 123, 123);
+    align-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-right {
+    position: absolute;
+    top: 80px;
+    right: 16px;
+  }
+
+.bottom-right {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+ }
+
+.img-container { background-color: #461810; }
+.img-container img { opacity: 0.5; }

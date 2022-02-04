@@ -1,0 +1,224 @@
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+
+
+
+<!-- Home Page --> 
+<section> 
+  <% if (title == "Home") { %>
+    <main>
+        <div class="img-container">
+        <img src="../Assets/images/home.jpg" class="img-fluid" alt="Responsive image"></div>
+        <div class="centered"><h1 style="font-size: 120px; color: pink;">WELCOME!</h1></div>
+
+    <div class="container"></div>
+      <div class="jumbotron bg-white text-dark">      
+        <h1 class="display-4">Hi there!</h1>
+        <h5>Welcome to my webpage. In this webpage, you can learn more about me. My goal is to design and develop real-world applications that will improve people's lives.
+          Thank you. If you have any questions, please do not hesitate to reach me!
+          </h5>
+      </div>
+
+    <!--Our services-->
+    
+    <div class="jumbotron bg-secondary text-white">  
+      <table style="width: 100%;">
+        <td><h1 class="display-4" style="text-align: center; padding-bottom: 40px;">Learn more</h1></td>
+      </table>
+      <table style="width: 100%; padding-bottom: 40px;">
+        <tr style="text-align: center;">
+          <td><a href="/about"><div id="circle"><img src="../Assets/images/about.jpg" alt="About" width="50%" style="margin-top: 25%;"></div></a></td>
+          <td><a href="/projects"><div id="circle"><img src="../Assets/images/projects.jpg" alt="Projects" width="50%" style="margin-top: 25%;"></div></a></td>
+          <td><a href="/services"><div id="circle"><img src="../Assets/images/services.jpg" alt="Services" width="50%" style="margin-top: 25%;"></div></a></td>
+          <td><a href="/contact"><div id="circle"><img src="../Assets/images/contact.jpg" alt="Contact" width="50%" style="margin-top: 25%;"></div></a></td>
+        </tr>
+        <tr style="text-align: center; font-family: 'Roboto', sans-serif;">
+          <td style="width: 25%; padding-top: 25px;">About Us</td>
+          <td style="width: 25%; padding-top: 25px;">Projects</td>
+          <td style="width: 25%; padding-top: 25px;">Services</td>
+          <td style="width: 25%; padding-top: 25px;">Contact</td>
+        </tr>
+      </table>
+    </div>
+<!--Contact-->
+    <div class="jumbotron bg-white text-dark">      
+      <h1 class="display-4" style="text-align: center;">Contact</h1>
+      <h4 style="text-align: center;">Please, do not hesitate to contact me.</h4><br>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm"><br><br>
+            <form action="index.html">
+              <div class="form-group">
+                <label for="nameLabel">Name</label>
+                <input type="text" class="form-control" id="nameLabel" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="shortMessage">Message</label>
+                <textarea class="form-control" id="shortMessage" rows="3" placeholder="Feel free to write us a message"></textarea>
+              </div>
+                <input type="submit" value="Submit" class="btn btn-info">
+              </form>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </main>
+  <% } else { %>
+  <% } %>
+</section>
+
+<!-- About Page --> 
+<section> 
+  <% if (title == "About") { %>
+    <main>
+    <img src="../Assets/images/about.jpg" class="img-fluid" alt="about">
+    <div class="container"></div>
+      <div class="jumbotron">      
+        <h1 class="display-4">Hello!</h1>
+        <p>My name is Ayse Gul Genc. Currently, I am in my third and fourth semester of Software Engineering Technician Program at Centennial College.
+          My experience in a nutshell
+          I graduated with Teaching Science degree in 2013 from Adiyaman University/Turkey. 
+          I have worked as a Full-time Teacher at Rosebud Primary School, Tsuen Wan/ Hong Kong in 2017 and in2018
+          I worked as an English Teacher at Only Education Learning English Center- Shanghai City/China 2017 
+          I worked as a PRINCIPAL at Rosegarden Bilingual Kindergarten and Learning Center, Shanghai City/China in 2016 and2017 
+          I have worked as a Full-time Assistant Principal in Rosegarden Bilingual Kindergarten and Learning Center, Shanghai City/China in 2015 and 2016 
+          If you would like to learn more about me, please press the link below and then download a copy of my resume.
+          <a href="/assets/images/documents/resume.pdf" download="ayse gul-resume">
+            <button type="button" class="btn text-dark btn-lg bg-white"> <i class="fas fa-download"></i><span id="ubuntu-font"> Download my resume!</span>
+                 </i></button>
+       </a>
+        </p>
+      </div>
+      <div class="mt-4">
+        
+        
+   </div>
+    </div>
+  </main>
+  <% } else { %>
+  <% } %>
+</section>
+
+<!-- Projects Page --> 
+<section> 
+  <% if (title == "Projects") { %>
+    <main>
+      <div class="container"></div>
+        <div class="jumbotron" id="initialParagraph">      
+          <h1 class="display-4">Projects by Me</h1>
+          <p>I am new in Software Engineering, so I don't have many projects, I will share some of my projects that I did with my classmates. Also, I would like to share which projects I would like to work on in future.</p>
+        </div>
+      </div>
+<!--first project-->
+      <table class="table table-borderless" style="width: 80%; margin-left: auto; margin-right: auto;" id="projectsTable">
+
+        <tr>
+          <td><div><img src="./Assets/images/absolutefit.jpg" alt="About" width="70%" style="margin-top: 50%;"></div></a></td>
+          <td>
+            <h5>AbsoluteFit</h5>
+            AbsoluteFit is Home Workouts app; and it is about bringing a gym to your place, also it is about motivating individuals and the health and wellbeing of the society.</td>
+        </tr>
+      <!--second project-->
+        <tr>
+          <td><div><img src="./Assets/images/securecamera.jpg" alt="About" width="70%" style="margin-top: 50%;"></div></a></td>
+          <td>
+            <h5>AI Secure Camera Application</h5>
+            AI Secure will help consumers protect their properties from robbing and burglary by connecting to other devices such as cameras and cell phones that are no longer in use. </td>
+        </tr>
+<!--third project-->
+        <tr>
+          <td><div><img src="./Assets/images/momapp.jpg" alt="About" width="70%" style="margin-top: 50%;"></div></a></td>
+          <td>
+            <h5>Mother Platform App </i></h5>
+            This website is a mothers’ platform where mothers can get ideas from each other, find answers to their questions, and share with mothers who are at the same stage of their children's development during pregnancy and after birth. In addition, this application provides families to socialize by talking to each other, to sell clothes that are small for their children or toys that they do not play with, or to share for free.</td>
+      </tr>
+    </table><br>
+
+    </main>
+  <% } else { %>
+  <% } %>
+</section>
+
+<!-- Services Page --> 
+<section> 
+  <% if (title == "Services") { %>
+    <main>
+      <div class="img-container">
+      <img src="./Assets/images/services.jpg" class="img-fluid" alt="Responsive image"></div>
+      <div class="centered"><h3 style="font-size: 40px; color: rgb(0, 162, 255);">Services by Me</h3></div>
+
+    <div class="container"></div>
+      <div class="jumbotron">      
+        <p style="text-align: center;">Here are some of the services I can offer.</p>
+
+        <table class="table table-borderless" style="width: 70%; margin-left: auto; margin-right: auto;" id="projectsTable">
+          
+          <tr>
+            <td>
+              <h5>Full Stack Developer</h5>
+              Full stack technology refers to the entire depth of a computer system application, and full stack developers straddle two separate web development domains: the front end and the back end.
+              JavaScript, HTML, CSS.
+              <td><div><img src="./Assets/images/fullstack.jpg" alt="About" width="70%" style="margin-top: 50%;"></div></a></td>
+            </td>
+          </tr>
+            
+          </tr>
+          <tr>
+            <td>
+              <h5>Cyber Security Analyst</h5>
+              A cybersecurity analyst protects company hardware, software, and networks from cybercriminals.
+              Cybersecurity languages include Java, JavaScript, Python, SQL, PHP, PowerShell, and C.
+            </td>
+          </tr>
+            
+      </table>
+      </div>
+    </div>
+  </main>
+  <% } else { %>
+  <% } %>
+</section>
+
+<!-- Contact Page --> 
+<section> 
+  <% if (title == "Contact") { %>
+    <img src="../Assets/images/contact.jpg" class="img-fluid" alt="Responsive image">
+    <main>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <br>
+            <h1 class="display-4" style="padding-top: 20px;">Please get in touch with us.</h1>
+            <br>
+
+            <form action="index.html">
+              <div class="form-group">
+                <label for="nameLabel">First Name</label>
+                <input type="text" class="form-control" id="nameLabel" placeholder="enter your first name">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="enter your email">
+              </div>
+              <div class="form-group">
+                <label for="shortMessage">Text Area</label>
+                <textarea class="form-control" id="shortMessage" rows="3" placeholder="Please leave your message here. Thank you."></textarea>
+              </div>
+              <input type="submit" value="Submit" class="btn btn-info"><br><br><br><br><br><br><br>
+            </form>
+          </div>
+        </div>
+      </div>      
+    </main> 
+  <% } else { %>
+  <% } %>
+</section>
+
+  <%- include partials/bottom_nav.ejs %>
+  <%- include partials/footer.ejs %>
